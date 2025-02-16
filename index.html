@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="g.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Google</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(bg.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center {
+            width: 60%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .inpt{
+            width: 65%;
+            background-color: white;
+            display: flex;
+            border-radius: 25px;
+            justify-content: center;
+            align-items: center;
+            margin: 15px;
+        }
+        i{
+            font-size: 20px;
+            color: black;
+            margin: 0 5px;
+        }
+        .text-field{
+            width: 500px;
+            height: 40px;
+            border: none;
+            font-size: 15px;
+            outline: none;
+            padding: 10px;
+        }
+        .items{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .favitems{
+            width: 90px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: transparent;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        .circle{
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            background-color: transparent;
+        }
+        .favitems:hover{
+            cursor: pointer;
+            background-color: rgba(155, 152, 152, 0.342);
+            .dot{
+                opacity: 1;
+            }
+        }
+        .tf{
+            color: rgba(255, 255, 255, 0.996);
+            margin-top: 5px;
+        }
+        .image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .top-right{
+            width: 300px;
+            height: 50px;
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .dot{
+            font-size: 16px;
+            position: relative;
+            left: 30px;
+            color: white;
+            opacity: 0;
+            transition: 0.5s all ease;
+        }
+        .dotss{
+            width: 20px;
+            height: 20px;
+        }
+        .gif{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        .text{
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="center">
+            <img src="google.png" alt="" style="width: 400px ; margin-top 30px; margin-bottom: 30px;">
+            
+            <div class="inpt">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <form action="https://www.google.com/search">
+                    <input type="text" name="q" class="text-field" placeholder="Search Google or type a URL">
+                </form>
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-camera"></i>
+            </div>
+            <div class="items">
+                <div class="favitems">
+                    <i class="fa-solid fa-ellipsis-vertical dot"></i>
+                    <div class="circle">
+                        <img src="insta.png" class="image" alt="" style="width: 100%; height: 100%; border-radius: 50%;">
+                    </div>
+                    <p class="tf">Instagram</p>
+                </div>
+                <div class="favitems">
+                    <i class="fa-solid fa-ellipsis-vertical dot"></i>
+                    <div class="circle">
+                        <img src="yt.png" class="image" alt="" style="width: 100%; height: 100%; border-radius: 50%;">
+                    </div>
+                    <p class="tf">YouTube</p>
+                </div>
+                <div class="favitems">
+                    <i class="fa-solid fa-ellipsis-vertical dot"></i>
+                    <div class="circle">
+                        <img src="dd.png" class="image" alt="" style="width: 100%; height: 100%; border-radius: 50%;">
+                    </div>
+                    <p class="tf">Discord
+                    </p>
+                </div>
+                <div class="favitems">
+                    <i class="fa-solid fa-ellipsis-vertical dot"></i>
+                    <div class="circle">
+                        <img src="mail.png" class="image" alt="" style="width: 100%; height: 100%; border-radius: 50%;">
+                    </div>
+                    <p class="tf">GMail</p>
+                </div>
+                <div class="favitems">
+                    <i class="fa-solid fa-ellipsis-vertical dot"></i>
+                    <div class="circle">
+                        <img src="plus.png" class="image" alt="" style="width: 100%; height: 100%;border-radius: 50%;">
+                    </div>
+                    <p class="tf">Add</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-right">
+        <p class="text">Gmail</p>
+        <p class="text">Images</p>
+        <div class="dotss">
+            <img src="3dots.png" alt="" style="height: 100%;width: 100%;">
+        </div>
+        <img src="gif.gif" alt="" class="gif">
+    </div>
+</body>
+
+</html>
