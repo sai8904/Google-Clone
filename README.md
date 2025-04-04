@@ -20,4 +20,4 @@ A simple **Google Search Clone** built using **HTML** and **CSS**. This project 
 ## 📂 How to Use  
 1. Clone the repository:  
    ```sh
-   git clone https://github.com/your-github-username/google-clone.git
+   git clone https://github.com/sai8904/Google-Clone
