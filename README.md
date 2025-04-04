@@ -15,7 +15,7 @@ A simple **Google Search Clone** built using **HTML** and **CSS**. This project 
 - **CSS** – Styling and responsiveness  
 
 ## 📸 Preview  
-![Google Clone Preview]([add-screenshot-url-here](https://github.com/sai8904/Google-Clone/blob/main/Screenshot%202025-04-04%20224407.png))  
+![Google Clone Preview](https://github.com/sai8904/Google-Clone/blob/main/Screenshot%202025-04-04%20224407.png)  
 
 ## 📂 How to Use  
 1. Clone the repository:  
